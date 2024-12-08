@@ -14,4 +14,4 @@ const sequelize = new Sequelize({
 })
 
 //exportando o apontamento do banco
-module.exports = sequelize //será importado como se fosse um pacote, para o arquivo app.js
+module.exports = sequelize //será importado como se fosse um pacote do npm, para o arquivo app.js

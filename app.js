@@ -12,8 +12,7 @@ app.listen(PORT, function() {
 // db connection
 
 // db.authenticate() retorna uma Promise
-db
-    .authenticate()
+db.authenticate()
     .then(() => {
         console.log('Conectou ao banco com sucesso')
     })

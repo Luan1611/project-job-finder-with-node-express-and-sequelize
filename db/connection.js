@@ -1,17 +1,8 @@
-//arquivo de conexão ao BD
+const Sequelize = require('sequelize');
 
-//sequelize -> aplicação para utilizarmos bancos RELACIONAIS com o node
-
-
-//chamando o pacote sequelize
-const Sequelize = require('sequelize')
-
-
-//criando uma instância do sequelize
 const sequelize = new Sequelize({
-    dialect: 'sqlite', //informa qual banco utilizaremos
-    storage: './db/app.db' //informa onde está o arquivo do banco
-})
+  dialect: 'sqlite',
+  storage: './db/app.db'
+});
 
-//exportando o apontamento do banco
-module.exports = sequelize //será importado como se fosse um pacote do npm, para o arquivo app.js
+module.exports = sequelize
